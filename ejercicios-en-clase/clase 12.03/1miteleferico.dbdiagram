@@ -1,0 +1,186 @@
+{
+  "version": "1.0.0",
+  "darkMode": true,
+  "gridEnabling": false,
+  "detailLevel": "All",
+  "tablePositions": [
+    {
+      "name": "linea",
+      "schemaName": "public",
+      "x": -203,
+      "y": 38
+    },
+    {
+      "name": "estaciones",
+      "schemaName": "public",
+      "x": 246.31870738239763,
+      "y": 367.31332147572084
+    },
+    {
+      "name": "recorre",
+      "schemaName": "public",
+      "x": 125.30842415882773,
+      "y": 6
+    },
+    {
+      "name": "cabinas",
+      "schemaName": "public",
+      "x": -196.26251896813355,
+      "y": 347.81790591805765
+    },
+    {
+      "name": "empleados",
+      "schemaName": "public",
+      "x": 235.14876551628913,
+      "y": 648.2505503907436
+    },
+    {
+      "name": "telefonos",
+      "schemaName": "public",
+      "x": -49.93917382776925,
+      "y": 717.4099040819423
+    },
+    {
+      "name": "pasajeros",
+      "schemaName": "public",
+      "x": -333.70362684370247,
+      "y": 540.4583772420334
+    },
+    {
+      "name": "bonos",
+      "schemaName": "public",
+      "x": -333.70362684370247,
+      "y": 986.2505503907436
+    },
+    {
+      "name": "transporta",
+      "schemaName": "public",
+      "x": -333.70362684370247,
+      "y": 1196.2505503907437
+    }
+  ],
+  "tableGroupCollapseStates": [],
+  "stickyNoteLayouts": [],
+  "referencePaths": [
+    {
+      "firstFieldNames": [
+        "linea_id"
+      ],
+      "firstTableName": "linea",
+      "firstSchemaName": "public",
+      "firstRelation": "1",
+      "secondFieldNames": [
+        "linea_id"
+      ],
+      "secondTableName": "recorre",
+      "secondSchemaName": "public",
+      "secondRelation": "*",
+      "checkPoints": []
+    },
+    {
+      "firstFieldNames": [
+        "estacion_id"
+      ],
+      "firstTableName": "estaciones",
+      "firstSchemaName": "public",
+      "firstRelation": "1",
+      "secondFieldNames": [
+        "estacion_id"
+      ],
+      "secondTableName": "recorre",
+      "secondSchemaName": "public",
+      "secondRelation": "*",
+      "checkPoints": []
+    },
+    {
+      "firstFieldNames": [
+        "estacion_id"
+      ],
+      "firstTableName": "estaciones",
+      "firstSchemaName": "public",
+      "firstRelation": "1",
+      "secondFieldNames": [
+        "estacion_id"
+      ],
+      "secondTableName": "empleados",
+      "secondSchemaName": "public",
+      "secondRelation": "*",
+      "checkPoints": []
+    },
+    {
+      "firstFieldNames": [
+        "empleado_id"
+      ],
+      "firstTableName": "empleados",
+      "firstSchemaName": "public",
+      "firstRelation": "1",
+      "secondFieldNames": [
+        "supervisor_empleado_id"
+      ],
+      "secondTableName": "empleados",
+      "secondSchemaName": "public",
+      "secondRelation": "*",
+      "checkPoints": []
+    },
+    {
+      "firstFieldNames": [
+        "empleado_id"
+      ],
+      "firstTableName": "empleados",
+      "firstSchemaName": "public",
+      "firstRelation": "1",
+      "secondFieldNames": [
+        "empleado_id"
+      ],
+      "secondTableName": "telefonos",
+      "secondSchemaName": "public",
+      "secondRelation": "*",
+      "checkPoints": []
+    },
+    {
+      "firstFieldNames": [
+        "empleado_id"
+      ],
+      "firstTableName": "empleados",
+      "firstSchemaName": "public",
+      "firstRelation": "1",
+      "secondFieldNames": [
+        "pasajero_id"
+      ],
+      "secondTableName": "bonos",
+      "secondSchemaName": "public",
+      "secondRelation": "*",
+      "checkPoints": []
+    },
+    {
+      "firstFieldNames": [
+        "cabina_id"
+      ],
+      "firstTableName": "cabinas",
+      "firstSchemaName": "public",
+      "firstRelation": "1",
+      "secondFieldNames": [
+        "cabina_id"
+      ],
+      "secondTableName": "transporta",
+      "secondSchemaName": "public",
+      "secondRelation": "*",
+      "checkPoints": []
+    },
+    {
+      "firstFieldNames": [
+        "pasajero_id"
+      ],
+      "firstTableName": "pasajeros",
+      "firstSchemaName": "public",
+      "firstRelation": "1",
+      "secondFieldNames": [
+        "pasajero_id"
+      ],
+      "secondTableName": "transporta",
+      "secondSchemaName": "public",
+      "secondRelation": "*",
+      "checkPoints": []
+    }
+  ]
+}

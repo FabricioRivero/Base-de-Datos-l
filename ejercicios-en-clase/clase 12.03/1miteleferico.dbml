@@ -1,0 +1,34 @@
+Table linea {
+   linea_id int [pk, increment]
+   color varchar [unique]
+   fecha_ingnaguracion date
+}
+
+Table estaciones{
+   estacion_id int [pk, increment]
+   nombre varcher(40) [unique]
+   direccion varchar(60) [not null]
+}
+
+Table recorre{
+   recorre_id int [pk, increment]
+   fecha date [null]
+   linea_id int [ref: > linea.linea_id]
+   estacion_id int [ref: > estaciones.estacion_id]
+}
+
+Table cabinas {
+  cabina_id int [pk, increment]
+  numero_cabina int [unique]
+  linea_id int
+}
+
+Table empleados{
+  empleado_id int [pk, increment]
+  carnet varchar(11) [unique]
+  nombre varchar
+  primer_apellido varchar
+  segundo_apellido varchar
+  sueldo double
+}
+
